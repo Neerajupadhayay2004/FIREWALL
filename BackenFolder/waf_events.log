@@ -1,0 +1,13 @@
+{"timestamp": "2025-04-06T12:38:05.106586", "ip": "136.232.153.202", "event_type": "ATTACK_DETECTED", "detail": "Attack type: XSS", "severity": 8}
+{"timestamp": "2025-04-06T12:38:11.715042", "ip": "136.232.153.202", "event_type": "TEMP_BLOCK", "detail": "Temporarily blocked IP", "severity": 6}
+{"timestamp": "2025-04-06T12:38:21.822972", "ip": "136.232.153.202", "event_type": "TEMP_BLOCK", "detail": "Temporarily blocked IP", "severity": 6}
+{"timestamp": "2025-04-06T12:38:24.197739", "ip": "136.232.153.202", "event_type": "TEMP_BLOCK", "detail": "Temporarily blocked IP", "severity": 6}
+{"timestamp": "2025-04-06T12:38:59.433214", "ip": "136.232.153.202", "event_type": "TEMP_BLOCK", "detail": "Temporarily blocked IP", "severity": 6}
+{"timestamp": "2025-04-06T12:39:17.676922", "ip": "136.232.153.202", "event_type": "TEMP_BLOCK", "detail": "Temporarily blocked IP", "severity": 6}
+{"timestamp": "2025-04-06T12:39:17.981787", "ip": "136.232.153.202", "event_type": "TEMP_BLOCK", "detail": "Temporarily blocked IP", "severity": 6}
+{"timestamp": "2025-04-06T12:40:14.620900", "ip": "136.232.153.202", "event_type": "TEMP_BLOCK", "detail": "Temporarily blocked IP", "severity": 6}
+{"timestamp": "2025-04-06T12:40:14.862715", "ip": "136.232.153.202", "event_type": "TEMP_BLOCK", "detail": "Temporarily blocked IP", "severity": 6}
+{"timestamp": "2025-04-06T12:42:04.437015", "ip": "136.232.153.202", "event_type": "TEMP_BLOCK", "detail": "Temporarily blocked IP", "severity": 6}
+{"timestamp": "2025-04-06T12:42:08.937345", "ip": "136.232.153.202", "event_type": "TEMP_BLOCK", "detail": "Temporarily blocked IP", "severity": 6}
+{"timestamp": "2025-04-06T12:42:15.579538", "ip": "136.232.153.202", "event_type": "TEMP_BLOCK", "detail": "Temporarily blocked IP", "severity": 6}
+{"timestamp": "2025-04-06T12:42:37.769671", "ip": "136.232.153.202", "event_type": "ATTACK_DETECTED", "detail": "Attack type: JWT-Algorithm-None", "severity": 8}

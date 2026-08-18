@@ -1,0 +1,341 @@
+{
+    "attack_categories": {
+        "xss": {
+            "1": {
+                "Attacker_Ip": "45.33.21.18",
+                "Attack_Time": "2023-05-15T08:23:45Z",
+                "Attack_On_Endpoint": "/api/comments"
+            },
+            "2": {
+                "Attacker_Ip": "112.45.67.89",
+                "Attack_Time": "2023-05-16T14:12:33Z",
+                "Attack_On_Endpoint": "/profile"
+            },
+            "3": {
+                "Attacker_Ip": "78.91.23.45",
+                "Attack_Time": "2023-05-17T19:45:12Z",
+                "Attack_On_Endpoint": "/search"
+            },
+            "4": {
+                "Attacker_Ip": "203.45.67.89",
+                "Attack_Time": "2023-05-18T10:34:56Z",
+                "Attack_On_Endpoint": "/forum/post"
+            },
+            "5": {
+                "Attacker_Ip": "156.78.90.12",
+                "Attack_Time": "2023-05-19T22:11:09Z",
+                "Attack_On_Endpoint": "/contact"
+            },
+            "9": {
+                "Attacker_Ip": "45.33.21.19",
+                "Attack_Time": "2023-05-19T08:23:49Z",
+                "Attack_On_Endpoint": "/rona/comments"
+            },
+            "10": {
+                "ip_address": "115.245.68.163",
+                "reason": "ATTACK_DETECTED: xss",
+                "time": "2025-10-31 04:02:22"
+            },
+            "11": {
+                "ip_address": "209.227.232.113",
+                "reason": "ATTACK_DETECTED: xss",
+                "time": "2025-10-31 04:17:03"
+            },
+            "12": {
+                "ip_address": "38.68.134.126",
+                "reason": "ATTACK_DETECTED: xss",
+                "time": "2025-10-31 06:29:00"
+            },
+            "13": {
+                "Attacker_Ip": "115.245.68.163",
+                "Attack_On_Endpoint": "ATTACK_DETECTED: xss",
+                "Attack_Time": "2025-10-31 07:32:03"
+            },
+            "14": {
+                "Attacker_Ip": "169.197.85.171",
+                "Attack_On_Endpoint": "ATTACK_DETECTED: xss",
+                "Attack_Time": "2025-10-31 07:51:43"
+            }
+        },
+        "sqli": {
+            "1": {
+                "Attacker_Ip": "89.34.56.78",
+                "Attack_Time": "2023-05-14T11:22:33Z",
+                "Attack_On_Endpoint": "/api/users"
+            },
+            "2": {
+                "Attacker_Ip": "123.45.67.89",
+                "Attack_Time": "2023-05-15T16:27:45Z",
+                "Attack_On_Endpoint": "/login"
+            },
+            "3": {
+                "Attacker_Ip": "45.67.89.12",
+                "Attack_Time": "2023-05-16T09:18:27Z",
+                "Attack_On_Endpoint": "/products"
+            },
+            "4": {
+                "Attacker_Ip": "78.90.12.34",
+                "Attack_Time": "2023-05-17T14:56:23Z",
+                "Attack_On_Endpoint": "/admin"
+            },
+            "5": {
+                "Attacker_Ip": "12.34.56.78",
+                "Attack_Time": "2023-05-18T20:45:11Z",
+                "Attack_On_Endpoint": "/api/orders"
+            },
+            "6": {
+                "Attacker_Ip": "90.12.34.56",
+                "Attack_Time": "2023-05-19T08:34:22Z",
+                "Attack_On_Endpoint": "/checkout"
+            },
+            "7": {
+                "ip_address": "192.168.1.100",
+                "reason": "Detected suspicious UNION SELECT statement",
+                "time": "2025-04-09 03:22:10"
+            },
+            "8": {
+                "ip_address": "192.168.1.100",
+                "reason": "Detected suspicious UNION SELECT statement",
+                "time": "2025-04-09 03:22:15"
+            },
+            "9": {
+                "ip_address": "192.168.1.100",
+                "reason": "Detected suspicious UNION SELECT statement",
+                "time": "2025-04-09 07:15:52"
+            }
+        },
+        "path_traversal": {
+            "1": {
+                "Attacker_Ip": "34.56.78.90",
+                "Attack_Time": "2023-05-15T12:34:56Z",
+                "Attack_On_Endpoint": "/download"
+            },
+            "2": {
+                "Attacker_Ip": "56.78.90.12",
+                "Attack_Time": "2023-05-16T18:23:45Z",
+                "Attack_On_Endpoint": "/api/files"
+            },
+            "3": {
+                "Attacker_Ip": "78.90.12.34",
+                "Attack_Time": "2023-05-17T22:11:33Z",
+                "Attack_On_Endpoint": "/images"
+            }
+        },
+        "command_injection": {
+            "1": {
+                "Attacker_Ip": "23.45.67.89",
+                "Attack_Time": "2023-05-14T15:45:23Z",
+                "Attack_On_Endpoint": "/api/system"
+            },
+            "2": {
+                "Attacker_Ip": "45.67.89.12",
+                "Attack_Time": "2023-05-15T19:34:12Z",
+                "Attack_On_Endpoint": "/admin/config"
+            }
+        },
+        "csrf": {
+            "1": {
+                "Attacker_Ip": "67.89.12.34",
+                "Attack_Time": "2023-05-16T10:23:45Z",
+                "Attack_On_Endpoint": "/api/account"
+            },
+            "2": {
+                "Attacker_Ip": "89.12.34.56",
+                "Attack_Time": "2023-05-17T16:45:23Z",
+                "Attack_On_Endpoint": "/settings"
+            },
+            "3": {
+                "Attacker_Ip": "12.34.56.78",
+                "Attack_Time": "2023-05-18T21:12:34Z",
+                "Attack_On_Endpoint": "/password/reset"
+            }
+        },
+        "phishing": {
+            "1": {
+                "Attacker_Ip": "34.56.78.90",
+                "Attack_Time": "2023-05-15T09:23:45Z",
+                "Phishing_Url_Endpoint": "paypa1-secure.net"
+            },
+            "2": {
+                "Attacker_Ip": "56.78.90.12",
+                "Attack_Time": "2023-05-16T14:34:56Z",
+                "Phishing_Url_Endpoint": "faceb00k-login.com"
+            },
+            "3": {
+                "Attacker_Ip": "78.90.12.34",
+                "Attack_Time": "2023-05-17T19:12:33Z",
+                "Phishing_Url_Endpoint": "amaz0n-account.com"
+            },
+            "4": {
+                "Attacker_Ip": "90.12.34.56",
+                "Attack_Time": "2023-05-18T11:45:22Z",
+                "Phishing_Url_Endpoint": "g00gle-verify.com"
+            }
+        },
+        "malware": {
+            "1": {
+                "Attacker_Ip": "12.34.56.78",
+                "Attack_Time": "2023-05-14T13:45:23Z",
+                "Malware_Url_Endpoint": "download-free-software.net"
+            },
+            "2": {
+                "Attacker_Ip": "34.56.78.90",
+                "Attack_Time": "2023-05-15T18:23:45Z",
+                "Malware_Url_Endpoint": "cracked-games.com"
+            },
+            "3": {
+                "Attacker_Ip": "56.78.90.12",
+                "Attack_Time": "2023-05-16T22:11:33Z",
+                "Malware_Url_Endpoint": "free-56.78.90.12"
+            },
+            "4": {
+                "Attacker_Ip": "78.90.12.34",
+                "Attack_Time": "2023-05-17T10:34:56Z",
+                "Malware_Url_Endpoint": "keygen-generator.net"
+            }
+        },
+        "anomaly_traffic_detection": {
+            "1": {
+                "Attacker_Ip": "23.45.67.89",
+                "Attack_Time": "2023-05-15T11:22:33Z",
+                "Anomaly_Behaviour_Endpoint": "/api/data"
+            },
+            "2": {
+                "Attacker_Ip": "45.67.89.12",
+                "Attack_Time": "2023-05-16T16:45:23Z",
+                "Anomaly_Behaviour_Endpoint": "/admin"
+            },
+            "3": {
+                "Attacker_Ip": "67.89.12.34",
+                "Attack_Time": "2023-05-17T21:12:34Z",
+                "Anomaly_Behaviour_Endpoint": "/api/users"
+            }
+        },
+        "week_password_detection": {
+            "1": {
+                "Attacker_Ip": "89.12.34.56",
+                "Attack_Time": "2023-05-14T14:23:45Z",
+                "Reason_For_Block": "/register"
+            },
+            "2": {
+                "Attacker_Ip": "12.34.56.78",
+                "Attack_Time": "2023-05-15T19:34:12Z",
+                "Reason_For_Block": "/account/create"
+            }
+        },
+        "rce": {
+            "1": {
+                "Attacker_Ip": "34.56.78.90",
+                "Attack_Time": "2023-05-16T12:34:56Z",
+                "Attack_On_Endpoint": "/api/execute"
+            },
+            "2": {
+                "Attacker_Ip": "56.78.90.12",
+                "Attack_Time": "2023-05-17T17:23:45Z",
+                "Attack_On_Endpoint": "/admin/scripts"
+            },
+            "3": {
+                "Attacker_Ip": "78.90.12.34",
+                "Attack_Time": "2023-05-18T22:11:33Z",
+                "Attack_On_Endpoint": "/api/system"
+            }
+        },
+        "dos": {
+            "1": {
+                "Attacker_Ip": "90.12.34.56",
+                "Attack_Time": "2023-05-15T10:23:45Z",
+                "Attack_On_Endpoint": "/api/login"
+            },
+            "2": {
+                "Attacker_Ip": "12.34.56.78",
+                "Attack_Time": "2023-05-16T15:45:23Z",
+                "Attack_On_Endpoint": "/api/products"
+            },
+            "3": {
+                "Attacker_Ip": "34.56.78.90",
+                "Attack_Time": "2023-05-17T20:12:34Z",
+                "Attack_On_Endpoint": "/api/checkout"
+            }
+        },
+        "log4j": {
+            "1": {
+                "Attacker_Ip": "56.78.90.12",
+                "Attack_Time": "2023-05-14T13:22:33Z",
+                "Attack_On_Endpoint": "/api/log"
+            },
+            "2": {
+                "Attacker_Ip": "78.90.12.34",
+                "Attack_Time": "2023-05-15T18:34:56Z",
+                "Attack_On_Endpoint": "/admin/logs"
+            }
+        },
+        "ssti": {},
+        "xxe": {},
+        "object_injection": {},
+        "http_request_smuggling": {},
+        "web_shell": {},
+        "jwt_attacks": {},
+        "file_inclusion": {},
+        "code_injection": {},
+        "protocol_attacks": {},
+        "insecure_deserialization": {},
+        "open_redirect": {},
+        "ssrf": {},
+        "ssrf_lfi_rfi": {},
+        "file_upload": {},
+        "evasion": {},
+        "cloud_server_anomly_detection": {}
+    },
+    "worked": {
+        "1": {
+            "Blocked_Ip": "45.33.21.18",
+            "Block_At_Time": "2023-05-15T08:23:50Z",
+            "Reason_For_Block": "XSS attack detected"
+        },
+        "2": {
+            "Blocked_Ip": "89.34.56.78",
+            "Block_At_Time": "2023-05-14T11:22:40Z",
+            "Reason_For_Block": "SQL Injection attempt"
+        },
+        "3": {
+            "Blocked_Ip": "34.56.78.90",
+            "Block_At_Time": "2023-05-15T12:35:10Z",
+            "Reason_For_Block": "Path traversal attempt"
+        },
+        "4": {
+            "Blocked_Ip": "23.45.67.89",
+            "Block_At_Time": "2023-05-14T15:45:30Z",
+            "Reason_For_Block": "Command injection attempt"
+        },
+        "5": {
+            "Blocked_Ip": "67.89.12.34",
+            "Block_At_Time": "2023-05-16T10:24:00Z",
+            "Reason_For_Block": "CSRF attack detected"
+        },
+        "6": {
+            "Blocked_Ip": "12.34.56.78",
+            "Block_At_Time": "2023-05-14T13:45:30Z",
+            "Reason_For_Block": "Malware distribution"
+        },
+        "7": {
+            "Blocked_Ip": "34.56.78.90",
+            "Block_At_Time": "2023-05-16T12:35:10Z",
+            "Reason_For_Block": "Remote code execution attempt"
+        },
+        "8": {
+            "Blocked_Ip": "90.12.34.56",
+            "Block_At_Time": "2023-05-15T10:24:00Z",
+            "Reason_For_Block": "DoS attack detected"
+        },
+        "9": {
+            "Blocked_Ip": "56.78.90.12",
+            "Block_At_Time": "2023-05-14T13:22:40Z",
+            "Reason_For_Block": "Log4j exploitation attempt"
+        },
+        "10": {
+            "Blocked_Ip": "112.45.67.89",
+            "Block_At_Time": "2023-05-16T14:12:40Z",
+            "Reason_For_Block": "XSS attack detected"
+        }
+    }
+}

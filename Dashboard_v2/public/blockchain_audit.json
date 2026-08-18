@@ -1,0 +1,128 @@
+{
+  "records": [
+    {
+      "type": "ATTACK_LOG",
+      "attackType": "sqli",
+      "attackId": "13",
+      "attackerIp": "192.168.1.100",
+      "endpoint": "/api/users/delete",
+      "dataHash": "ea3c95b6a1c78eb84e46f46d92359106f7a00740614cd2de448a3d026b546f81",
+      "transactionHash": "0xb987a8ef33e822fedb47766a4048e86dc34e5f95203dcdd6f957e75f27e55436",
+      "blockNumber": 29511335,
+      "timestamp": "2025-11-25 19:54:57",
+      "localHash": "679aca7ab41dc642c59a2aef0250b3e34a051b6cd9a749fb9a0247ff1cbd09ba"
+    },
+    {
+      "type": "ATTACK_LOG",
+      "attackType": "phishing",
+      "attackId": "5",
+      "attackerIp": "127.251.160.171",
+      "endpoint": "https://prank-gram-login.lovable.app/pranked?username=9109109103&password=rjdlbacobvoceboohdw",
+      "dataHash": "4d7823e9d3479243f4f0622f633c68e4c1901e731de5e130e011c330432f6bb9",
+      "transactionHash": "0x248beb2c25e1f048dba14f978638d025e7311eaab04c49d6860def9a306d7355",
+      "blockNumber": 29539016,
+      "timestamp": "2025-11-26 11:17:38",
+      "localHash": "6e673422469dbf6ebb4fc4d4c0aca2b756798e9fbe5140af109665a60c855de5"
+    },
+    {
+      "type": "ATTACK_LOG",
+      "attackType": "phishing",
+      "attackId": "6",
+      "attackerIp": "127.251.160.171",
+      "endpoint": "https://prank-gram-login.lovable.app/favicon.ico",
+      "dataHash": "bf82806afe44b1efa989c6553a7b5628f7ab2b497e46efd293c4e2972094e24d",
+      "transactionHash": "0x194220f09e2d6346dbb3cc25678c5e44618887630073d8cce32b8d9e914458bf",
+      "blockNumber": 29539020,
+      "timestamp": "2025-11-26 11:17:44",
+      "localHash": "8cf03f6c0349ff9d4507fd76d76fd6ef49c465fd1f6fe1328b93fd6ad2fb3480"
+    },
+    {
+      "type": "ATTACK_LOG",
+      "attackType": "phishing",
+      "attackId": "7",
+      "attackerIp": "127.251.160.171",
+      "endpoint": "https://prank-gram-login.lovable.app/pranked?username=9109109103&password=rjdlbacobvoceboohdw",
+      "dataHash": "fb09b07fe194c089b41f0c4b92924ed2d7d227c069687af81fd2f18ed7942b58",
+      "transactionHash": "0x12f2718c3bd8ff941344220d5b4cce01204b7c1da7ef3b0c0afaa80d7c0ebabb",
+      "blockNumber": 29539046,
+      "timestamp": "2025-11-26 11:18:37",
+      "localHash": "63372dcc8a781a1f681b390b324bf4d9c81a789643879ab9f1e05baab87577c3"
+    },
+    {
+      "type": "ATTACK_LOG",
+      "attackType": "phishing",
+      "attackId": "8",
+      "attackerIp": "127.251.160.171",
+      "endpoint": "https://prank-gram-login.lovable.app/favicon.ico",
+      "dataHash": "37c769c32a607165efa97f27a6f0989148e03b1ec5f2b6dfc6d259fc5d1f82a4",
+      "transactionHash": "0x6498b96b3d2d83613dacea1f2966145f37a10362fd7f87272e3ae048b826ef90",
+      "blockNumber": 29539051,
+      "timestamp": "2025-11-26 11:18:47",
+      "localHash": "cff56a8fb311d993dd606ff8d5c2e7e65a4d2ec66a202a3d35dc4b9c20d614fe"
+    },
+    {
+      "type": "ATTACK_LOG",
+      "attackType": "phishing",
+      "attackId": "9",
+      "attackerIp": "127.251.160.171",
+      "endpoint": "https://prank-gram-login.lovable.app/pranked?username=9109109103&password=rjdlbacobvoceboohd",
+      "dataHash": "1ba287f047eb45f609aec0c44fbe3a353a3ef878c32d2ce4fbf3aa9d61991ab1",
+      "transactionHash": "0x7f6538fa5c1496e1ea83fe5bc6df12a67b103767968fc1ce2c068659e507b20c",
+      "blockNumber": 29539136,
+      "timestamp": "2025-11-26 11:21:35",
+      "localHash": "9e082adee1ab02e871c51e81d9d82bcb1890100bdbb996786155ee1f9dac9c9e"
+    },
+    {
+      "type": "ATTACK_LOG",
+      "attackType": "phishing",
+      "attackId": "10",
+      "attackerIp": "127.251.160.171",
+      "endpoint": "https://prank-gram-login.lovable.app/~api/analytics",
+      "dataHash": "68c8af79755e1de0a19206bb4b64ee7c792a060b35b12da9da8f77d81203ae0c",
+      "transactionHash": "0x8fae1d2020ec87d76e9bcf9957fbd8b8df5423fb41b63f6c31882cc82939e660",
+      "blockNumber": 29539161,
+      "timestamp": "2025-11-26 11:22:24",
+      "localHash": "f3a2ab039131bc4718a95c1f1df4cbb13d41bcc96a3ed0536af398ce3a8bdc0e"
+    },
+    {
+      "type": "ATTACK_LOG",
+      "attackType": "phishing",
+      "attackId": "11",
+      "attackerIp": "127.251.160.171",
+      "endpoint": "https://prank-gram-login.lovable.app/pranked?username=9109209304&password=shwismpwkdpqldkfjf",
+      "dataHash": "36c5453cbef0687a09a7437e40bc2ea6bd9879e8ae547408329c765f65861572",
+      "transactionHash": "0x83f7a5a11e1273b70bc1af80aecd2fb1d792da88551da5ae11cfcc5210d094e6",
+      "blockNumber": 29539164,
+      "timestamp": "2025-11-26 11:22:32",
+      "localHash": "bab65faea8b5ef5c43d0e753e9d3db6c35d352c0d8bb6bb04ee6c6e91f750288"
+    },
+    {
+      "type": "ATTACK_LOG",
+      "attackType": "phishing",
+      "attackId": "12",
+      "attackerIp": "127.251.160.171",
+      "endpoint": "https://readaloud.googleapis.com//v1:checkUrl?alt=proto",
+      "dataHash": "19dfc11fb60f7bd257dba47c49a2028488130c6d6a675e8648978bf137eaf7c7",
+      "transactionHash": "0x79a076b52bc8d9cea3eafb52ba5aa2564d6aa3f23d2c4d1d2b5279d500c8bb64",
+      "blockNumber": 29539166,
+      "timestamp": "2025-11-26 11:22:38",
+      "localHash": "2f595fde5afc18d1611dc953af2f70944fb66d8f216c65bb08168c4dede0f445"
+    },
+    {
+      "type": "ATTACK_LOG",
+      "attackType": "phishing",
+      "attackId": "13",
+      "attackerIp": "127.251.160.171",
+      "endpoint": "https://prank-gram-login.lovable.app/favicon.ico",
+      "dataHash": "db6addd33432505733fb5c73fad75e4983b36903aefeb052d16a99ebd7e73f20",
+      "transactionHash": "0x14dcd0551d7baf63814de8026dff907f6bee9a45b8ab3674fb669c420487856d",
+      "blockNumber": 29539169,
+      "timestamp": "2025-11-26 11:22:42",
+      "localHash": "c8223f7de3be5ebf1aae769a60c24af0b541834bdc2954bb35a51c2fc5f4569f"
+    }
+  ],
+  "metadata": {
+    "created": "2025-11-25T14:02:25.643Z",
+    "version": "1.0"
+  }
+}

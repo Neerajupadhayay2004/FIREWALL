@@ -1,0 +1,50 @@
+{
+    "domains": {
+        "sarva.cloud": {
+            "target": "http://localhost:8001",
+            "cert": "cer.crt",
+            "key": "pri.key"
+        },
+        "example.com": {
+            "target": "http://localhost:8002",
+            "cert": "cer.crt",
+            "key": "pri.key"
+        }
+    },
+    "rate_limits": {
+        "window_size": 10,
+        "max_requests": 20,
+        "burst_window": 2,
+        "burst_threshold": 10,
+        "ip_block_duration": 1800,
+        "max_payload_size": 1048576
+    },
+    "behavioral_analysis": {
+        "suspicious_user_agents": [
+            "zgrab",
+            "masscan",
+            "nmap",
+            "nikto",
+            "sqlmap",
+            "whatweb",
+            "dirbuster",
+            "wpscan",
+            "joomscan"
+        ],
+        "session_tracking_window": 300,
+        "error_threshold": 5,
+        "path_diversity_threshold": 20
+    },
+    "whitelist": {
+        "ips": [],
+        "paths": [
+            "/health",
+            "/status"
+        ]
+    },
+    "blacklist": {
+        "ips": [],
+        "countries": [],
+        "asns": []
+    }
+}
