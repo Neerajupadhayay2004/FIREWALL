@@ -14,7 +14,7 @@
 
 | Component | Link |
 |---|---|
-| 🖥️ **Frontend Dashboard** | [Dashboard_v2](./Dashboard_v2) |
+| 🖥️ **Frontend Dashboard** | [Dashboard_v2](https://firewall-dun.vercel.app/dashboard) |
 | ⚙️ **Backend / WAF API** | [https://firewall-qaxw.onrender.com](https://firewall-qaxw.onrender.com) |
 | 📊 **Live Database API** | [https://firewall-qaxw.onrender.com/database.json](https://firewall-qaxw.onrender.com/database.json) |
 | 🧪 **WAF Test Endpoint** | [https://firewall-qaxw.onrender.com/waf-test](https://firewall-qaxw.onrender.com/waf-test) |
