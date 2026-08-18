@@ -6,7 +6,9 @@ from datetime import datetime, timezone
 
 app = Flask(__name__)
 
-DATABASE_FILE = os.path.join(os.getcwd(), "database.json")
+# Always resolve the database next to this Python file. This avoids Render working-directory issues.
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATABASE_FILE = os.path.join(BASE_DIR, "database.json")
 
 # Defensive test signatures. These only identify suspicious input; they do not execute it.
 ATTACK_PATTERNS = {
@@ -56,7 +58,6 @@ def load_database():
 
 
 def save_database(data):
-    # Keep the existing dashboard database intact and append new test events.
     tmp_file = DATABASE_FILE + ".tmp"
     with open(tmp_file, "w", encoding="utf-8") as file:
         json.dump(data, file, indent=2)
@@ -75,9 +76,7 @@ def detect_attacks(value):
 
 
 def collect_request_input():
-    parts = []
-    parts.append(request.full_path)
-    parts.append(request.get_data(as_text=True)[:100000])
+    parts = [request.full_path, request.get_data(as_text=True)[:100000]]
     parts.extend(str(v) for v in request.args.values())
     parts.extend(str(v) for v in request.form.values())
     try:
@@ -106,7 +105,7 @@ def record_detection(categories):
             "Attack_Time": now,
             "Attacker_Ip": attacker_ip,
             "Reason": f"ATTACK_DETECTED: {category}",
-            "Source": "live-waf-test"
+            "Source": "live-waf-test",
         }
 
         worked_keys = [int(k) for k in worked.keys() if str(k).isdigit()]
@@ -116,7 +115,7 @@ def record_detection(categories):
             "Blocked_Ip": attacker_ip,
             "Reason_For_Block": f"{category.upper()} attack detected",
             "Endpoint": endpoint,
-            "Source": "live-waf-test"
+            "Source": "live-waf-test",
         }
 
     save_database(data)
@@ -126,10 +125,9 @@ def record_detection(categories):
 @app.after_request
 def add_cors_headers(response):
     response.headers["Access-Control-Allow-Origin"] = "*"
-    response.headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE, OPTIONS"
+    response.headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, PATCH, DELETE, OPTIONS"
     response.headers["Access-Control-Allow-Headers"] = "Content-Type, Authorization"
-    if request.method == "OPTIONS":
-        response.status_code = 204
+    response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
     return response
 
 
@@ -139,7 +137,7 @@ def health():
         "status": "online",
         "service": "FIREWALL WAF API",
         "test_endpoint": "/waf-test",
-        "database_endpoint": "/database.json"
+        "database_endpoint": "/database.json",
     })
 
 
@@ -162,14 +160,14 @@ def waf_test():
             "timestamp": timestamp,
             "attacker_ip": attacker_ip,
             "message": "Suspicious input detected and recorded. Payload was not executed.",
-            "dashboard": "/database.json"
+            "dashboard": "/database.json",
         }), 403
 
     return jsonify({
         "status": "ALLOWED",
         "detected": False,
         "endpoint": request.path,
-        "message": "No configured attack signature matched this request."
+        "message": "No configured attack signature matched this request.",
     }), 200
 
 
